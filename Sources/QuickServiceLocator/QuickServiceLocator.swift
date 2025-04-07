@@ -111,7 +111,7 @@ public struct QuickServiceLocator {
         sharedInstances.removeValue(forKey: key)
     }
     
-    /// Check if a service is registerd
+    /// Check if a service is registered
     /// - Parameter type: the registered service to check
     public static func isRegister<T>(_ type: T.Type) -> Bool {
         let key = ObjectIdentifier(type)

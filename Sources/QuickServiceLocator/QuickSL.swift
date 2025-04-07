@@ -7,17 +7,17 @@
 
 import Foundation
 
-/// When no parmeter : **Resolve** a service which must be complient with **Instance type**.
+/// When no parameter : **Resolve** a service which must be compliant with **Instance type**.
 /// When register parameter used : **Register** a service with an instance from a factory
-/// which must be complient with the targeted **Instance type**
+/// which must be compliant with the targeted **Instance type**
 @propertyWrapper
 public struct QuickSL<Instance> {
     
-    /// **Resolve** a service which must be complient with **Instance type**
+    /// **Resolve** a service which must be compliant with **Instance type**
     public init() {}
         
     /// **Register** a service with an instance from a factory which must
-    /// be complient with the targeted **Instance type**
+    /// be compliant with the targeted **Instance type**
     ///
     /// You can change the way the service is loaded by changing the *mode* : by default **lazySharedInstance**
     public init(register: @autoclosure @escaping () -> Instance,
